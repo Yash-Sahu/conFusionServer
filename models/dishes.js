@@ -4,7 +4,7 @@ const Currency = mongoose.Types.Currency;
 
 const Schema = mongoose.Schema;
 
-const commentSchema = new Schema({
+/*const commentSchema = new Schema({
     rating:{
         type:Number,
         min:1,
@@ -20,7 +20,7 @@ const commentSchema = new Schema({
         ref: 'User'
     }
 },{ timestamps:true
-});
+});*/
 
 const dishSchema = new Schema({
     name : {
@@ -52,8 +52,8 @@ const dishSchema = new Schema({
     featured:{
         type:Boolean,
         default:false
-    },
-    comments: [commentSchema]
+    }
+    //comments: [commentSchema]
 }, {
     timestamps:true
 });
